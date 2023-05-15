@@ -36,7 +36,7 @@ private void TxtPassword_PasswordChanged(object sender, RoutedEventArgs e)
 ```
 
 Este evento se activa cuando el usuario ingresa o cambia su contraseña en el cuadro de contraseña. 
-Comprueba si el `DataContext` es del tipo `LoginViewModel` y si el cuadro de contraseña no está vacío. Si es así, `PasswordErrorVisibility`.  
+Comprueba si el `DataContext` es del tipo `LoginViewModel` y si el cuadro de contraseña no está vacío. Si es así, `PasswordErrorVisibility` pasara a visible.  
 La propiedad se establece en `Visibility.Collapsed`, lo que oculta el mensaje de error. Si el cuadro de contraseña está vacío, 
 el La propiedad `PasswordErrorVisibility` se establece en `Visibility.Visible` y muestra el mensaje de error.
 
@@ -58,5 +58,4 @@ private void TxtEmail_TextChanged(object sender, TextChangedEventArgs e)
 }
 ```
 Este evento se activa cuando el usuario ingresa o cambia su correo electrónico en el cuadro de texto del correo electrónico. 
-Comprueba si el DataContext es del tipo `LoginViewModel` y si el cuadro de texto del correo electrónico no está vacío. Si es así, `EmailErrorVisibility`. 
-La propiedad se establece en` Visibility.Collapsed`, lo que oculta el mensaje de error. Si el cuadro de texto del correo electrónico está vacío, el La propiedad `EmailErrorVisibility` se establece en `Visibility.Visible` y muestra el mensaje de error.
+Comprueba si el DataContext es del tipo `LoginViewModel` y si el cuadro de texto del correo electrónico no está vacío. Si es así, `EmailErrorVisibility` se activara. La propiedad se establece en` Visibility.Collapsed`, lo que oculta el mensaje de error. Si el cuadro de texto del correo electrónico está vacío, el La propiedad `EmailErrorVisibility` se establece en `Visibility.Visible` y muestra el mensaje de error.
