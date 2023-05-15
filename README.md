@@ -58,4 +58,5 @@ private void TxtEmail_TextChanged(object sender, TextChangedEventArgs e)
 }
 ```
 Este evento se activa cuando el usuario ingresa o cambia su correo electrónico en el cuadro de texto del correo electrónico. 
-Comprueba si el DataContext es del tipo `LoginViewModel` y si el cuadro de texto del correo electrónico no está vacío. Si es así, EmailErrorVisibility. La propiedad se establece en Visibility.Collapsed, lo que oculta el mensaje de error. Si el cuadro de texto del correo electrónico está vacío, el La propiedad EmailErrorVisibility se establece en Visibility.Visible y muestra el mensaje de error.
+Comprueba si el DataContext es del tipo `LoginViewModel` y si el cuadro de texto del correo electrónico no está vacío. Si es así, `EmailErrorVisibility`. 
+La propiedad se establece en` Visibility.Collapsed`, lo que oculta el mensaje de error. Si el cuadro de texto del correo electrónico está vacío, el La propiedad `EmailErrorVisibility` se establece en `Visibility.Visible` y muestra el mensaje de error.
